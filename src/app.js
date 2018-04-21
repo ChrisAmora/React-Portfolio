@@ -1,11 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import ReactDOM from 'react-dom';
-
-const Jsx = () => {
-  return (
-    <div>It's on Babbeee</div>
-  )
-}
+import AppRouter from './routers/AppRouter';
 
 
-ReactDOM.render(<Jsx />, document.querySelector('#app'))
+ReactDOM.render(AppRouter, document.querySelector('#app'));
