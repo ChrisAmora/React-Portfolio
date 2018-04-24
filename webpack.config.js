@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const CSSExtract = new ExtractTextPlugin('styles.css');
 
@@ -38,7 +39,13 @@ module.exports = {
       },
     ],
   },
-  plugins: [CSSExtract],
+  plugins: [
+    CSSExtract,
+    new HtmlWebpackPlugin({
+      title: 'Portfolio',
+      template: './src/index.html',
+    }),
+  ],
   devtool: 'inline-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'public'),
