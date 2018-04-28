@@ -11,17 +11,18 @@
   "author": "Chris Amora",
   "license": "MIT",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "history": "^4.7.2",
     "node-sass": "^4.8.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-particles-js": "^2.1.2",
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
