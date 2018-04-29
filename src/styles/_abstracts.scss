@@ -1,0 +1,10 @@
+@mixin gradient() {
+  & {
+    background: linear-gradient(#DE6262, #ffb88c);
+  }
+}
+
+$font-primary: 'Hi Melody', cursive;
+$font-secondary: 'Press Start 2P', cursive;
+$primary-bg-color: rgba(250, 235, 215, 10%);
+$font-size-primary: 2rem;

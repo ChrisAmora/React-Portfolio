@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, Router } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import Header from '../components/Header';
+import Container from '../components/Container';
 
 const history = createHistory();
 
@@ -9,7 +9,7 @@ const history = createHistory();
 export default (
   <Router history={history} >
     <Switch>
-      <Route path='/' component={Header} />
+      <Route path='/' component={Container} />
     </Switch>
   </Router>
 );
