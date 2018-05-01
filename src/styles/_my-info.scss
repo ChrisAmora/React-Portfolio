@@ -1,0 +1,11 @@
+.main {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__svg {
+    height: 30rem;
+    width: 30rem;
+  }
+}
