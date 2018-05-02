@@ -8,10 +8,31 @@
   flex-direction: column;
 }
 
-.title {
+.header__text {
+  margin-top: 2rem;
+  max-width: 100rem;
+  text-align: center;
 }
 
-.header__subtitle {
-  padding: 0 8rem;
-  margin-top: 2rem;
+.case {
+  color: blue;
+}
+.text {
+  color: green;
+}
+
+.console {
+  color: red;
+}
+
+.symbol {
+  color: rgb(150,150,150);
+}
+
+.func {
+  color: purple;
+}
+
+.func-name {
+  color: red;
 }

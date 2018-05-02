@@ -1,11 +1,25 @@
 .main {
-  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   &__svg {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+.tech {
+  display: flex;
+  margin-top: 6rem;
+  padding: 0 30rem;
+  justify-content: space-between;
+  &__skills {
+    max-width: 50rem;
+  }
+  &__svg {
     height: 30rem;
     width: 30rem;
   }
 }
+
