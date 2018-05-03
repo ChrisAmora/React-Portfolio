@@ -1,8 +1,6 @@
 import React from 'react';
 
-export default () => {
-  console.log('oi');
-  return (
+export default () => (
     <div className="card-container">
       <div className="card">
       <div className="card__side card__side--front">
@@ -33,6 +31,5 @@ export default () => {
       </div>
     </div>
   </div>
-  );
-};
+);
 

@@ -1,8 +1,8 @@
 export default [
-  { name: 'Javascript/ES2018', color: 'blue' }, { name: 'React', color: 'red' }, { name: 'Redux', color: 'red' },
-  { name: 'Express', color: 'yellow' }, { name: 'MongoDB', color: 'yellow' }, { name: 'Webpack', color: 'yellow' },
-  { name: 'Node.js', color: 'yellow' }, { name: 'Firebase', color: 'yellow' }, { name: 'HTML', color: 'green' },
-  { name: 'CSS/Sass', color: 'green' }, { name: 'jQuery', color: 'green' }, { name: 'Bootstrap', color: 'green' },
-  { name: 'Jest', color: 'purple' }, { name: 'Git', color: 'purple' }, { name: 'Heroku', color: 'purple' },
+  { name: 'Javascript/ES2018', type: '4' }, { name: 'React', type: '4' }, { name: 'Redux', type: '4' },
+  { name: 'Express', type: '3' }, { name: 'MongoDB', type: '3' },
+  { name: 'Node.js', type: '3' }, { name: 'Firebase', type: '3' }, { name: 'HTML', type: '2' },
+  { name: 'CSS/Sass', type: '2' }, { name: 'jQuery', type: '2' }, { name: 'Bootstrap', type: '2' },
+  { name: 'Jest', type: '1' }, { name: 'Git', type: '1' }, { name: 'Heroku', type: '' }, { name: 'Webpack', type: '' },
 ];
 

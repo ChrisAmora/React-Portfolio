@@ -1,11 +1,11 @@
 import React from 'react';
 import Bullbasaur from '../../public/images/svg/charmander.svg';
 import Charmander from '../../public/images/svg/bullbasaur.svg';
-import Pidgey from '../../public/images/svg/pidgey.svg';
+import Squirtle from '../../public/images/svg/squirtle.svg';
 
 export default () => (
     <React.Fragment>
-      <h2 className="comment">
+      <h2 className="comment" id='projects'>
         <span className="element">sites</span>.<span className='console'>filter</span>(<span className="element">site</span> =>{' '}
         <span className="element">site.tipo</span> === <span className="element">React</span>)
       </h2>
@@ -31,12 +31,12 @@ export default () => (
           </div>
         </div>
         <div className="card__site">
-          <Pidgey className="card__site__svg"/>
+          <Squirtle className="card__site__svg"/>
           <div className='card__site__container'>
-            <img className='card__site__container__img' src='/images/expenses-2.jpg' />
+            <img className='card__site__container__img' src='/images/expenses-x.jpg' />
             <div className='card__site__container__text'>
               <h2>Expenser()</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo, voluptatum aut perspiciatis officiis ipsum, id deleniti commodi ipsa minus voluptates, quisquam consequatur voluptatem dolores impedit ducimus unde magni accusantium!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nemo, voluptatum aut perspiciatis rthrthhrtrrhrofficiis ipsum, id deleniti commodi ipsa minus voluptarthtrhrthrthrthtes, quisquam consequatur voluptatem dolores impedit ducimus unde magni accusantium!</p>
             </div>
         </div>
         </div>

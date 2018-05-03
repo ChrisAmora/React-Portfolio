@@ -9,17 +9,17 @@ export default () => (
         <Meowth className='main__svg' />
         <h5>
           <span className='func'>Function </span><span className='func-name'>helloWorld </span>() &#123;
-            <div className='default-text'>'Olá, meu nome é Christiano, sou de Belo Horizonte, MG! Formado em economia, Web Developer por paixão.'
+            <div className='default-text'>'Olá, meu nome é Christiano, sou de Belo Horizonte, MG! Formado em economia, Web Developer por paixão...'
               <p>Adoro desenvolver sites responsivos, sempre utilizando as mais novas tecnologias do mercado</p>
             </div>
             &#125;
         </h5>
       </article>
-      <h2 className='comment'>/* As tecnologias que uso*/ </h2>
+      <h2 className='comment' id='tech'>/* As tecnologias que uso*/ </h2>
       <article className='tech'>
         <div className='tech__skills'>
         {
-          skills.map((skill, index) => <span key={index} className='button'>{skill.name}</span>)
+          skills.map((skill, index) => <span key={index} className={`button button--${skill.type}`}>{skill.name}</span>)
         }
       </div>
       <Pokeball className='tech__svg' />
