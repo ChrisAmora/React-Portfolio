@@ -11,7 +11,7 @@ switch ('time') {
     console.log('ReactJS');
     break;
   case Server:
-    console.log('Node.js');
+    console.log(arr);
     break;
   default: console.log('Full stack, MERN');
 }
@@ -20,3 +20,7 @@ switch ('time') {
 function helloWorld() {
   return 'oi';
 }
+
+const arr = [];
+
+arr.filter(site => site.tipo === React);

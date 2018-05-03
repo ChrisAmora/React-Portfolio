@@ -1,0 +1,28 @@
+.card {
+  max-width: 120rem;
+  display: flex;
+  margin: 0 auto;
+
+  &__site {
+    flex: 0 0 33%;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__svg {
+      height: 20rem;
+    }
+
+    &__container {
+      &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      &__text {
+        background-color: rgb(220, 220, 220)
+      }
+    }
+  }
+}
