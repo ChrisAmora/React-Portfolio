@@ -1,18 +1,18 @@
 import React from 'react';
-import Header from './Header';
-import Particles from './Particles';
-import Main from './MyInfo';
-import Projetos from './Projetos';
 import Form from './Form';
+import Header from './Header';
 import Nav from './Nav';
+import Particles from './Particles';
+import Projects from './Projects';
+import Tech from './Tech';
 
 export default () => (
     <React.Fragment>
       <Particles/>
         <Nav />
         <Header />
-        <Main />
-        <Projetos />
+        <Tech />
+        <Projects />
         <Form />
     </React.Fragment>
 );

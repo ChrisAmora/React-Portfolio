@@ -21,7 +21,12 @@
         height: auto;
       }
       &__text {
-        background-color: rgb(220, 220, 220)
+        height: 40rem;
+        padding-left: 2rem;
+        background-color: rgb(220, 220, 220);
+        &--title {
+          color: rgba(6, 143, 143, 0.904);
+        }
       }
     }
   }

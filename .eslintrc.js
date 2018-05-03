@@ -10,6 +10,7 @@ module.exports = {
   },
   "rules": {
     "linebreak-style": ["error","windows"],
+    "max-len": "off",
     "react/jsx-filename-extension": 0,
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",

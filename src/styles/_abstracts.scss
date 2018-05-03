@@ -1,8 +1,13 @@
-@mixin gradient() {
-  & {
-    background: linear-gradient(#DE6262, #ffb88c);
-  }
-}
+$font-primary: 'Inconsolata', monospace;
+$font-secondary: 'VT323', monospace;
+$font-text: 'Roboto Condensed', sans-serif;
+$primary-bg-color: rgba(250, 235, 215, 10%);
+$font-size-primary: 2rem;
+$font-size-secondary: 3rem;
+$primary-color: #5a5a5a;
+$color-light-1: #ffd89b;
+$color-light-2: #5ea0cc;
+
 
 @mixin center {
   & {
@@ -13,12 +18,8 @@
   }
 }
 
-//$font-primary: 'Hi Melody', cursive;
-//$font-secondary: 'Press Start 2P', cursive;
-//$font-primary: 'Space Mono', monospace;
-$font-primary: 'Inconsolata', monospace;
-$font-secondary: 'VT323', monospace;
-$font-text: 'Roboto Condensed', sans-serif;
-$primary-bg-color: rgba(250, 235, 215, 10%);
-$font-size-primary: 2rem;
-$primary-color: #5a5a5a;
+@mixin gradient() {
+  & {
+    background: linear-gradient($color-light-1, $color-light-2);
+  }
+}
