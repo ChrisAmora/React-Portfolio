@@ -1,11 +1,12 @@
 const path = require('path');
+const autoprefixer = require('autoprefixer');
+const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const CSSExtract = new ExtractTextPlugin('styles.css');
 
-module.exports = {
-  mode: 'development',
+module.exports = (env, options) => ({
   entry: ['babel-polyfill', './src/app.js'],
   output: {
     path: path.join(__dirname, 'public'),
@@ -26,6 +27,13 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 sourceMap: true,
+              },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+                plugins: [autoprefixer()],
               },
             },
             {
@@ -50,10 +58,17 @@ module.exports = {
       title: 'Portfolio',
       template: './src/index.html',
     }),
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8,
+    }),
   ],
-  devtool: 'inline-source-map',
+  devtool: options.mode === 'production' ? 'source-map' : 'inline-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     historyApiFallback: true,
   },
-};
+});
