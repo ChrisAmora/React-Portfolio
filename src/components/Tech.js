@@ -1,6 +1,6 @@
 import React from 'react';
-import Meowth from '../../public/images/svg/meowth.svg';
-import Pokeball from '../../public/images/svg/pokeballs.svg';
+import Meowth from '../images/svg/meowth.svg';
+import Pokeball from '../images/svg/pokeballs.svg';
 import skills from '../helper/skills';
 
 export default () => (

@@ -1,7 +1,11 @@
 import React from 'react';
-import Bullbasaur from '../../public/images/svg/charmander.svg';
-import Charmander from '../../public/images/svg/bullbasaur.svg';
-import Squirtle from '../../public/images/svg/squirtle.svg';
+import Bullbasaur from '../images/svg/bullbasaur.svg';
+import Charmander from '../images/svg/charmander.svg';
+import Squirtle from '../images/svg/squirtle.svg';
+import img1 from '../images/img-1.jpg';
+import img2 from '../images/img-2.jpg';
+import img3 from '../images/img-3.jpg';
+
 
 export default () => (
   <React.Fragment>
@@ -18,7 +22,7 @@ export default () => (
         <div className="card__site__container">
           <img
             className="card__site__container__img"
-            src="/images/pollarizer.jpg"
+            src={img1}
           />
           <div className="card__site__container__text">
             <h2 className='card__site__container__text--title comment'>Pollarizer()</h2>
@@ -36,7 +40,7 @@ export default () => (
         <div className="card__site__container">
           <img
             className="card__site__container__img"
-            src="/images/weather-3.jpg"
+            src={img2}
           />
           <div className="card__site__container__text">
             <h2 className='card__site__container__text--title comment'>Climático()</h2>
@@ -54,7 +58,7 @@ export default () => (
         <div className="card__site__container">
           <img
             className="card__site__container__img"
-            src="/images/expenses-x.jpg"
+            src={img3}
           />
           <div className="card__site__container__text">
             <h2 className='card__site__container__text--title comment'>Expenser()</h2>

@@ -1,12 +1,25 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const CompressionPlugin = require('compression-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-const CSSExtract = new ExtractTextPlugin('styles.css');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = (env, options) => ({
+  optimization: {
+    minimizer: options.mode === 'production' ? [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true,
+      }),
+      new OptimizeCSSAssetsPlugin({
+        cssProcessorOptions: { discardComments: { removeAll: true } },
+        canPrint: false,
+      }),
+    ] : [],
+  },
   entry: ['babel-polyfill', './src/app.js'],
   output: {
     path: path.join(__dirname, 'public'),
@@ -21,39 +34,55 @@ module.exports = (env, options) => ({
       },
       {
         test: /\.s?css$/,
-        use: CSSExtract.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                sourceMap: true,
-              },
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              minimize: true,
             },
-            {
-              loader: 'postcss-loader',
-              options: {
-                sourceMap: true,
-                plugins: [autoprefixer()],
-              },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins: [autoprefixer()],
             },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true,
-              },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
             },
-          ],
-        }),
+          },
+        ],
       },
       {
         test: /\.svg$/,
         exclude: /node_modules/,
         loader: 'svg-react-loader',
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
-    CSSExtract,
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
     new HtmlWebpackPlugin({
       title: 'Portfolio',
       template: './src/index.html',
