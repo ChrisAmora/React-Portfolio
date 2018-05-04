@@ -5,7 +5,7 @@ import Squirtle from '../../public/images/svg/squirtle.svg';
 
 export default () => (
   <React.Fragment>
-    <h2 className="comment" id="projects">
+    <h2 className="comment big-space" id="projects">
       <span className="element">sites</span>.<span className="console">
         filter
       </span>(<span className="element">site</span> =>{' '}
@@ -21,7 +21,7 @@ export default () => (
             src="/images/download.jpg"
           />
           <div className="card__site__container__text">
-            <h2 className='card__site__container__text--title'>Pollarizer()</h2>
+            <h2 className='card__site__container__text--title comment'>Pollarizer()</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
               excepturi repellendus rerum sunt hic a beatae repudiandae, aperiam
@@ -39,7 +39,7 @@ export default () => (
             src="/images/weather-3.jpg"
           />
           <div className="card__site__container__text">
-            <h2 className='card__site__container__text--title'>Climático()</h2>
+            <h2 className='card__site__container__text--title comment'>Climático()</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
               minus repellendus eius voluptates nam? Exercitationem temporibus,
@@ -57,7 +57,7 @@ export default () => (
             src="/images/expenses-x.jpg"
           />
           <div className="card__site__container__text">
-            <h2 className='card__site__container__text--title'>Expenser()</h2>
+            <h2 className='card__site__container__text--title comment'>Expenser()</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
               nemo, voluptatum aut perspiciatis rthrthhrtrrhrofficiis ipsum, id

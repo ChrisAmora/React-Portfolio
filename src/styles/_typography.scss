@@ -2,11 +2,17 @@ h1 {
   font-family: $font-secondary;
   font-size: 6rem;
   font-weight: 400;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   font-size: 5rem;
   text-align: center;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4rem;
+  }
 }
 
 h3 {
@@ -31,5 +37,11 @@ h5 {
 }
 
 .comment {
-  margin: 15rem 0
+  background-image: linear-gradient(to right, rgb(41, 187, 231), rgb(51, 54, 228));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.big-space {
+  margin: 15rem 1rem;
 }

@@ -12,17 +12,17 @@ export default () => (
       <ul className="navigation__list">
         <li className="navigation__item">
           <a href="#header" className="navigation__link">
-            Cabeçalho
+            Home
           </a>
         </li>
         <li className="navigation__item">
           <a href="#tech" className="navigation__link">
-            Meu Stack
+            Stack
           </a>
         </li>
         <li className="navigation__item">
           <a href="#projects" className="navigation__link">
-            Meus Projetos
+            Projetos
           </a>
         </li>
         <li className="navigation__item">

@@ -2,10 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 1rem;
 
   &__svg {
+    transition: 1s all;
+    z-index: 10;
     height: 20rem;
     width: 20rem;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      animation: spin 7s infinite;
+    }
   }
 }
 
@@ -14,12 +23,21 @@
   margin-top: 6rem;
   padding: 0 30rem;
   justify-content: space-between;
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    padding: 0 10rem;
+    align-items: center;
+  }
   &__skills {
     max-width: 50rem;
   }
   &__svg {
     height: 30rem;
     width: 30rem;
+    z-index: 10;
+    &:hover {
+      animation: spin 7s infinite;
+    }
   }
 }
 

@@ -15,7 +15,7 @@ export default () => (
             &#125;
         </h5>
       </article>
-      <h2 className='comment' id='tech'>/*Lista das tecnologias que domino*/ </h2>
+      <h2 className='comment big-space' id='tech'>/*Lista das tecnologias que utilizo*/ </h2>
       <article className='tech'>
         <div className='tech__skills'>
         {

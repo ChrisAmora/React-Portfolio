@@ -9,7 +9,7 @@
 	font-family:Arial;
   font-size:1.5rem;
   margin: 1rem 1rem 0 0;
-  padding:.5rem 2rem;
+  padding:.5rem $default-space;
   position: relative;
 	text-decoration:none;
   text-shadow:0px 1px 0px #283966;
@@ -41,8 +41,8 @@
     box-shadow: 0px 0px 0px 2px rgb(29, 4, 75);
     text-shadow: #708699;
     &:hover {
-      background:linear-gradient(to bottom, #2a1068 5%, #5f085f 100%);
-      background-color:#600463;
+      background:linear-gradient(to bottom, #034e80 5%, #2240e9 100%);
+      background-color:#0f2c63;
     }
   }
   &--3 {

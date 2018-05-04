@@ -4,7 +4,7 @@ export default () => (
     <div className="book">
       <div className="book__form">
         <form action="#" className="form">
-            <h2 className="form__title" id='form'>
+            <h2 className="form__title comment" id='form'>
               // Deixe Um Recado!
             </h2>
           <div className="form__group">
@@ -20,7 +20,7 @@ export default () => (
             <label htmlFor="text" className="form__label">Recado</label>
           </div>
           <div className="form__group">
-            <button className="button button--2">Enviar &rarr;</button>
+            <span className="button button--2">Enviar &rarr;</span>
           </div>
         </form>
       </div>

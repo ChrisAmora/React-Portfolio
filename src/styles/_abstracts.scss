@@ -7,6 +7,11 @@ $font-size-secondary: 3rem;
 $primary-color: #5a5a5a;
 $color-light-1: #ffd89b;
 $color-light-2: #5ea0cc;
+$bp-largest: 81em;
+$bp-large: 69em;
+$bp-medium: 53em;
+$bp-small: 30em;
+$default-space: 2rem;
 
 
 @mixin center {
@@ -23,3 +28,13 @@ $color-light-2: #5ea0cc;
     background: linear-gradient($color-light-1, $color-light-2);
   }
 }
+
+@keyframes spin {
+ 0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(360deg) scale(1.2); }
+}
+
+@keyframes jump {
+  0% { transform: skewY(2rem); }
+   100% { transform: skewY(5rem); }
+ }
