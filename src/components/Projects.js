@@ -18,7 +18,7 @@ export default () => (
         <div className="card__site__container">
           <img
             className="card__site__container__img"
-            src="/images/download.jpg"
+            src="/images/pollarizer.jpg"
           />
           <div className="card__site__container__text">
             <h2 className='card__site__container__text--title comment'>Pollarizer()</h2>
