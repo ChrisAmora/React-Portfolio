@@ -2,9 +2,9 @@ import React from 'react';
 import Bullbasaur from '../images/svg/bullbasaur.svg';
 import Charmander from '../images/svg/charmander.svg';
 import Squirtle from '../images/svg/squirtle.svg';
-import img1 from '../images/img-1.jpg';
-import img2 from '../images/img-2.jpg';
-import img3 from '../images/img-3.jpg';
+import img1 from '../images/img_1.jpg';
+import img2 from '../images/img_2.jpg';
+import img3 from '../images/img_3.jpg';
 
 
 export default () => (

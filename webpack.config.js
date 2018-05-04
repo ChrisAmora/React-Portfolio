@@ -33,6 +33,15 @@ module.exports = (env, options) => ({
         exclude: /node_modules/,
       },
       {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]',
+          },
+        }],
+      },
+      {
         test: /\.s?css$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -43,6 +52,7 @@ module.exports = (env, options) => ({
               minimize: true,
             },
           },
+          // { loader: 'resolve-url-loader' },
           {
             loader: 'postcss-loader',
             options: {
