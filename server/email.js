@@ -9,10 +9,10 @@ exports.sendEmail = (req, res, next) => {
   const { text, name, emailer } = req.body;
   const value = { text, name, emailer };
   const schema = {
-    emailer: Joi.string().min(5).max(60).required()
+    emailer: Joi.string().min(1).max(100).required()
       .email(),
-    text: Joi.string().min(5).max(500).required(),
-    name: Joi.string().min(5).max(60).required(),
+    text: Joi.string().min(1).max(1000).required(),
+    name: Joi.string().min(1).max(100).required(),
   };
   const result = Joi.validate(value, schema);
   if (result.error) {
@@ -34,7 +34,7 @@ exports.sendEmail = (req, res, next) => {
     from: `"${name}" <${email}`,
     to: email,
     subject: 'Portfolio-site',
-    text: `${emailer} + ${text}`,
+    text: `${emailer}  ${text}`,
   };
   transporter.sendMail(HelperOptions)
     .catch(err => next(err));

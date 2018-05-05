@@ -16,6 +16,19 @@
       animation: spin 7s infinite;
     }
   }
+  &__info {
+    &__container {
+      position: relative;
+      z-index: 999;
+      display: inline-block;
+      margin: 3rem 2rem 2rem 0;
+      &__svg {
+        height: 5rem;
+        width: 5rem;
+        pointer-events: none;
+      }
+    }
+  }
 }
 
 .tech {

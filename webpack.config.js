@@ -109,6 +109,9 @@ module.exports = (env, options) => ({
   ],
   devtool: options.mode === 'production' ? 'source-map' : 'inline-source-map',
   devServer: {
+    proxy: {
+      '/': 'http://localhost:80',
+    },
     contentBase: path.join(__dirname, 'public'),
     historyApiFallback: true,
   },
