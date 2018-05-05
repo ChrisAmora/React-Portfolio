@@ -21,7 +21,7 @@ export default () => (
           <a className='main__info__container' href="http://www.google.com" target="_blank">
             <Linkedim className='main__info__container__svg' />
           </a>
-          <a className='main__info__container' href="http://www.google.com" target="_blank">
+          <a className='main__info__container' href="http://www.google2.com" target="_blank">
             <Gmail className='main__info__container__svg' />
           </a>
           <a className='main__info__container' href="http://www.google.com" target="_blank">
