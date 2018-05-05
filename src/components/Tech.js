@@ -12,8 +12,8 @@ export default () => (
         <Meowth className='main__svg' />
         <h5>
           <span className='func'>Function </span><span className='func-name'>helloWorld </span>() &#123;
-            <div className='default-text'><span className='func'>return </span>'Olá, meu nome é Christiano, sou de Belo Horizonte, MG. Formado em economia, Web Developer por paixão'
-              <p>Adoro desenvolver sites responsivos, sempre utilizando as mais novas tecnologias do mercado'</p>
+            <div className='default-text'><span className='func'>return </span>'Olá, meu nome é Christiano, sou de Belo Horizonte, MG. Formado em economia, Web Developer por paixão.'
+              <p>Adoro desenvolver sites responsivos, sempre utilizando as mais novas tecnologias do mercado.'</p>
             </div>
             &#125;
         </h5>
@@ -21,10 +21,10 @@ export default () => (
           <a className='main__info__container' href="http://www.google.com" target="_blank">
             <Linkedim className='main__info__container__svg' />
           </a>
-          <a className='main__info__container' href="http://www.google2.com" target="_blank">
+          <a className='main__info__container' href="mailto:christiano.amora@gmail.com" target="_blank">
             <Gmail className='main__info__container__svg' />
           </a>
-          <a className='main__info__container' href="http://www.google.com" target="_blank">
+          <a className='main__info__container' href="https://github.com/ChrisAmora" target="_blank">
             <Github className='main__info__container__svg' />
           </a>
         </div>

@@ -43,6 +43,9 @@ export default class Form extends React.Component {
           <div className="form__group">
             <button ref={this.submitButton} id="submitbutton" className="button button--2">Enviar &rarr;</button>
           </div>
+          <div className='form__contact'>
+            <a className="form__contact__email" href="mailto:christiano.amora@gmail.com">christiano.amora@gmail.com</a>
+          </div>
         </form>
       </div>
     </div>

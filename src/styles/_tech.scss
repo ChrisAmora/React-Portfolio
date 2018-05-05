@@ -22,6 +22,10 @@
       z-index: 999;
       display: inline-block;
       margin: 3rem 2rem 2rem 0;
+      fill: rgba(34, 27, 27, 0.856);
+      &:hover {
+        fill: rgb(12, 11, 11);
+      }
       &__svg {
         height: 5rem;
         width: 5rem;
@@ -40,6 +44,9 @@
     flex-direction: column-reverse;
     padding: 0 10rem;
     align-items: center;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 2rem;
   }
   &__skills {
     max-width: 50rem;
