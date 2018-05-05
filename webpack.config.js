@@ -95,6 +95,7 @@ module.exports = (env, options) => ({
     new HtmlWebpackPlugin({
       title: 'Portfolio',
       template: './src/index.html',
+      favicon: 'favicon.ico',
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async',

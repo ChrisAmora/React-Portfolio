@@ -41,21 +41,19 @@
     transition: all .8s cubic-bezier(0.66, -0.55, 0.265, 1.55);
   }
 
-  &__list {
+  &__nav__list {
     @include center;
     list-style: none;
     text-align: center;
     width: 100%;
   }
 
-  &__item {
+  &__nav__list__item {
     margin: 1rem;
   }
-  &__link {
-    display: none !important;
-  }
 
-  &__link {
+  &__nav__list__item__link {
+      display: none !important;
       &:link,
       &:visited {
       display: inline-block;
