@@ -1,10 +1,15 @@
 const path = require('path');
 const express = require('express');
+const bodyParser = require('body-parser');
+const middleware = require('./middleware');
 
 const app = express();
 const publicPath = path.join(__dirname, '..', 'public');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 80;
+const email = require('./email');
 
+app.use(bodyParser.json({ type: '*/*' }));
+app.use(middleware.errorHandler);
 app.get('*.js', (req, res, next) => {
   req.url += '.gz';
   res.set('Content-Encoding', 'gzip');
@@ -18,6 +23,7 @@ app.get('*.css', (req, res, next) => {
 });
 app.use(express.static(publicPath));
 
+app.post('/email', email.sendEmail);
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
