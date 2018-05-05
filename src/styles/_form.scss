@@ -29,6 +29,9 @@
         font-size: 3rem;
         margin-bottom: $default-space;
       }
+      &:disabled {
+        z-index: -999;
+      }
     }
   }
 

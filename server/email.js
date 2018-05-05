@@ -9,10 +9,10 @@ exports.sendEmail = (req, res, next) => {
   const { text, name, emailer } = req.body;
   const value = { text, name, emailer };
   const schema = {
-    emailer: Joi.string().min(5).max(50).required()
+    emailer: Joi.string().min(5).max(60).required()
       .email(),
     text: Joi.string().min(5).max(500).required(),
-    name: Joi.string().min(3).max(100).required(),
+    name: Joi.string().min(5).max(60).required(),
   };
   const result = Joi.validate(value, schema);
   if (result.error) {
