@@ -51,6 +51,9 @@
   &__item {
     margin: 1rem;
   }
+  &__link {
+    display: none !important;
+  }
 
   &__link {
       &:link,
@@ -76,6 +79,10 @@
 
   &__checkbox:checked ~ &__background {
     transform: scale(80);
+  }
+
+  &__checkbox:checked ~ &__nav ul li a {
+    display: inline-block !important;
   }
 
   &__checkbox:checked ~ &__nav {
