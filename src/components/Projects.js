@@ -71,9 +71,9 @@ export default () => (
             </a>
             <p>
               Expenser é uma ferramenta para organizar e contabilizar seus
-              gastos. Utilizando das mais novas ferramentas do Javascript,
+              gastos. Orientado pelo professor Andrew Mead e Utilizando das mais novas ferramentas do Javascript,
               através do Babel Loader, Database na nuvem com o Firebase e testes
-              com o Jest, Expenser é um site simples, rápido e eficiente.
+              com o Jest. Expenser foi criado para ser um site rapido simples e eficiente.
             </p>
           </div>
         </div>
