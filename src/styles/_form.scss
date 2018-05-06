@@ -1,10 +1,11 @@
 .book {
-  position: relative;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($primary-color, .2);
+  box-shadow: 0 1.5rem 4rem rgba($primary-color, 0.2);
+  position: relative;
 
   &__form {
     padding: 6rem;
+
     @media only screen and (max-width: $bp-large) {
       padding: 0;
       margin-top: $default-space;
@@ -13,16 +14,19 @@
 }
 
 .form {
+  z-index: 999;
+
   &__contact {
+    font-size: 2.5rem;
     margin: 2rem 0;
     text-align: center;
-    font-size: 2.5rem;
-    &__email:link, &__email:visited {
-      text-decoration:none;
+
+    &__email:link,
+    &__email:visited {
       color: rgb(22, 20, 20);
+      text-decoration: none;
     }
   }
-  z-index: 999;
 
   &__group:not(:last-child) {
     margin-bottom: $default-space;
@@ -30,8 +34,9 @@
   &__group {
     text-align: center;
     & .button {
-      width: 40rem;
       padding: $default-space 1.5rem;
+      width: 40rem;
+
       @media only screen and (max-width: $bp-large) {
         width: 50%;
         padding: 3rem $default-space;
@@ -45,23 +50,22 @@
   }
 
   &__input {
-    margin: 0 auto;
-    font-size: 2.5rem;
-    font-family: inherit;
-    color: inherit;
-    padding: 1.5rem  $default-space;   
-    border-radius: 3px;
-    background-color: rgba(white, .5);
+    background-color: rgba(white, 0.5);
     border: none;
+    border-radius: 3px;
     border-bottom: 3px solid transparent;
-    width: 90%;
+    color: inherit;
     display: block;
-    transition: all .3s;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    padding: 1.5rem $default-space;
+    transition: all 0.3s;
+    width: 90%;
 
     &:focus {
+      border-bottom: 3px solid #5598c5;
+      box-shadow: 0 1rem 2rem rgba(black, 0.1);
       outline: none;
-      box-shadow: 0 1rem 2rem rgba(black, .1);
-      border-bottom: 3px solid #5598c5;;
     }
 
     &:focus:invalid {
@@ -72,28 +76,22 @@
       color: #999;
     }
 
+    &:placeholder-shown + &__label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+    }
+
     &--textarea {
       padding: 3rem $default-space;
     }
   }
 
-  &__input:focus {
-    outline: none;
-    box-shadow: 0 1rem $default-space rgba(black, .1);
-    border-bottom: 3px solid $color-light-2;;
-  }
-
   &__label {
     font-size: 2rem;
-    margin-left:$default-space;
-    margin-top: .7rem;
+    margin-left: $default-space;
+    margin-top: 0.7rem;
     display: block;
-    transition: all .3s;
-  }
-
-  &__input:placeholder-shown + &__label {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem);
+    transition: all 0.3s;
   }
 }

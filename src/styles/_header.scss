@@ -6,34 +6,30 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
 
-.header__text {
-  margin-top: $default-space;
-  max-width: 100rem;
-  text-align: center;
-  margin-left: 1rem;
-}
-
-.element {
-  color: rgba(47, 15, 228, 0.534);
-}
-.text {
-  color: rgb(32, 187, 92);
+  &__text {
+    margin-top: $default-space;
+    max-width: 100rem;
+    text-align: center;
+    margin-left: 1rem;
+  }
 }
 
 .console {
   color: rgba(236, 22, 22, 0.863);
 }
-
-.symbol {
-  color: rgb(150,150,150);
+.element {
+  color: rgba(47, 15, 228, 0.534);
 }
-
 .func {
   color: rgb(173, 16, 90);
 }
-
 .func-name {
   color: rgba(248, 15, 15, 0.89);
+}
+.symbol {
+  color: rgb(150, 150, 150);
+}
+.text {
+  color: rgb(32, 187, 92);
 }

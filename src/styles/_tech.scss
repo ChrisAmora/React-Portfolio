@@ -1,14 +1,14 @@
 .main {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-left: 1rem;
 
   &__svg {
-    transition: 1s all;
-    z-index: 10;
     height: 20rem;
+    transition: 1s all;
     width: 20rem;
+    z-index: 10;
     &:hover {
       transform: scale(1.2);
     }
@@ -18,18 +18,18 @@
   }
   &__info {
     &__container {
+      display: inline-block;
+      fill: rgba(34, 27, 27, 0.856);
+      margin: 3rem 2rem 2rem 0;
       position: relative;
       z-index: 999;
-      display: inline-block;
-      margin: 3rem 2rem 2rem 0;
-      fill: rgba(34, 27, 27, 0.856);
       &:hover {
         fill: rgb(12, 11, 11);
       }
       &__svg {
         height: 5rem;
-        width: 5rem;
         pointer-events: none;
+        width: 5rem;
       }
     }
   }
@@ -38,19 +38,23 @@
 .tech {
   display: flex;
   margin-top: 6rem;
-  padding: 0 30rem;
   justify-content: space-between;
+  padding: 0 30rem;
+
   @media only screen and (max-width: $bp-medium) {
+    align-items: center;
     flex-direction: column-reverse;
     padding: 0 10rem;
-    align-items: center;
   }
+
   @media only screen and (max-width: $bp-medium) {
     padding: 0 2rem;
   }
+
   &__skills {
     max-width: 50rem;
   }
+  
   &__svg {
     height: 30rem;
     width: 30rem;
@@ -60,4 +64,3 @@
     }
   }
 }
-

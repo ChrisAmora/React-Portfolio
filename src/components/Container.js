@@ -7,13 +7,12 @@ import Projects from './Projects';
 import Tech from './Tech';
 
 export default () => (
-    <React.Fragment>
-      <Particles/>
-        <Nav />
-        <Header />
-        <Tech />
-        <Projects />
-        <Form />
-    </React.Fragment>
+  <React.Fragment>
+    <Particles />
+    <Nav />
+    <Header />
+    <Tech />
+    <Projects />
+    <Form />
+  </React.Fragment>
 );
-

@@ -53,7 +53,6 @@ module.exports = (env, options) => ({
               minimize: true,
             },
           },
-          // { loader: 'resolve-url-loader' },
           {
             loader: 'postcss-loader',
             options: {

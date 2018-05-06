@@ -2,6 +2,7 @@ h1 {
   font-family: $font-secondary;
   font-size: 6rem;
   font-weight: 400;
+
   @media only screen and (max-width: $bp-small) {
     font-size: 3.8rem;
   }
@@ -10,33 +11,39 @@ h1 {
 h2 {
   font-size: 5rem;
   text-align: center;
+
   @media only screen and (max-width: $bp-small) {
     font-size: 4rem;
   }
 }
 
 h3 {
-  font-weight: 400;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 h5 {
-  font-size: $font-size-secondary;
-  display: block;
-  max-width: 50rem;
-  font-weight: 700;
   color: #333;
+  display: block;
+  font-size: $font-size-secondary;
+  font-weight: 700;
+  max-width: 50rem;
 }
 
 .default-text {
+  color: $primary-color;
   font-family: $font-text;
   font-size: 1.8rem;
-  color: $primary-color;
   font-weight: 400;
 }
 
 .comment {
-  background-image: linear-gradient(to right, rgb(41, 187, 231), rgb(51, 54, 228));
+  background-image: linear-gradient(
+    to right,
+    rgb(41, 187, 231),
+    rgb(51, 54, 228)
+  );
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
