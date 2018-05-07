@@ -52,7 +52,7 @@ export default () => (
               Climático me mostrou como é incrível trabalhar com React. Utilizando-me da fabulosa OpenWeatherMap API,
               acessada com o Axios. Criei um simples site, onde é possível
               digitar uma cidade e receber a previsão do tempo. A UI foi feita
-              utilizando Foundation.
+              com o uso do Foundation.
             </p>
           </div>
         </div>
@@ -69,8 +69,8 @@ export default () => (
             </a>
             <p>
               Expenser é uma ferramenta simples, rápida e eficiente, utilizada para organizar e contabilizar seus
-              gastos. Orientado pelo professor Andrew Mead, utilizei-me das mais novas ferramentas do Javascript,
-              com o auxílio do Babel Loader. O app conta com Database na nuvem propiciada pelo Firebase e testes
+              gastos. Orientado pelo professor Andrew Mead, com o uso das mais novas ferramentas do Javascript,
+              através do Babel Loader. O app conta com Database na nuvem propiciada pelo Firebase e testes
               com o Jest.
             </p>
           </div>

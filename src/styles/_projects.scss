@@ -43,8 +43,11 @@
       }
       &__text {
         background-color: rgb(220, 220, 220);
-        height: 55rem;
+        min-height: 55rem;
+        height: auto;
         padding-left: $default-space;
+        padding-right: 0.5rem;
+
         &--title {
           position: relative;
           z-index: 999;

@@ -18,7 +18,7 @@ export default () => (
           de Belo Horizonte, MG. Formado em economia, Web Developer por paixão.
           <p>
             Adoro desenvolver sites responsivos, sempre utilizando as mais novas
-            tecnologias do mercado, sendo React meu xodó!!'
+            tecnologias do mercado, sendo grande fã de React.js.'
           </p>
         </div>
         &#125;

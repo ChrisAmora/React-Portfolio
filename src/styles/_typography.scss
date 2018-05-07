@@ -2,9 +2,10 @@ h1 {
   font-family: $font-secondary;
   font-size: 6rem;
   font-weight: 400;
+  text-align: center;
 
   @media only screen and (max-width: $bp-small) {
-    font-size: 3.8rem;
+    font-size: 5rem;
   }
 }
 
@@ -15,11 +16,18 @@ h2 {
   @media only screen and (max-width: $bp-small) {
     font-size: 4rem;
   }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 3.5rem;
+  }
 }
 
 h3 {
   font-size: 2rem;
   font-weight: 400;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.8rem;
+  }
 }
 
 h5 {
@@ -33,8 +41,12 @@ h5 {
 .default-text {
   color: $primary-color;
   font-family: $font-text;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: 400;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.2rem;
+  }
 }
 
 .comment {

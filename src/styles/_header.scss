@@ -1,17 +1,28 @@
 .header {
   background-color: $primary-bg-color;
   width: 100%;
-  height: 40vh;
+  min-height: 40vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media only screen and (max-width: $bp-large) {
+    &__title {
+      margin-bottom: 0;
+    }
+  }
 
   &__text {
     margin-top: $default-space;
     max-width: 100rem;
     text-align: center;
     margin-left: 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 0;
+    }
   }
 }
 
