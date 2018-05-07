@@ -29,12 +29,11 @@ export default () => (
             <p>
               Imagine que você queira um rápido feedback de seu público. Qual o
               melhor sabor de sorvete? Qual o melhor professor da academia? Quem
-              irá ganhar o Brasileirão 2018? Pollarizer é uma ferramenta que com
+              irá ganhar o Brasileirão 2018? Com Pollarizer, em
               apenas alguns cliques, você poderá iniciar uma votação e
-              acompanhar em tempo real os resultados. Site completo, com Backend
-              em Node, Mongo, Express, possuindo autenticação com JWT. Frontend
-              feita com React/Redux, utilizando Sass e Bootstrap, "bundled" com
-              Webpack
+              acompanhar em tempo real os resultados. Site completo, com Back-end
+              feita em Node, Mongo, Express, possuindo autenticação com JWT. Front-end
+              criada com React/Redux, utilizando Sass e Bootstrap.
             </p>
           </div>
         </div>
@@ -50,10 +49,9 @@ export default () => (
               </h2>
             </a>
             <p>
-              Climático me mostrou como é incrível trabalhar com React. Foi meu
-              primeiro projeto. Me aproveitando da fabulosa OpenWeatherMap API,
+              Climático me mostrou como é incrível trabalhar com React. Utilizando-me da fabulosa OpenWeatherMap API,
               acessada com o Axios. Criei um simples site, onde é possível
-              fornecer uma cidade e receber a previsão do tempo. A UI foi feita
+              digitar uma cidade e receber a previsão do tempo. A UI foi feita
               utilizando Foundation.
             </p>
           </div>
@@ -70,10 +68,10 @@ export default () => (
               </h2>
             </a>
             <p>
-              Expenser é uma ferramenta para organizar e contabilizar seus
-              gastos. Orientado pelo professor Andrew Mead e Utilizando das mais novas ferramentas do Javascript,
-              através do Babel Loader, Database na nuvem com o Firebase e testes
-              com o Jest. Expenser foi criado para ser um site rapido simples e eficiente.
+              Expenser é uma ferramenta simples, rápida e eficiente, utilizada para organizar e contabilizar seus
+              gastos. Orientado pelo professor Andrew Mead, utilizei-me das mais novas ferramentas do Javascript,
+              com o auxílio do Babel Loader. O app conta com Database na nuvem propiciada pelo Firebase e testes
+              com o Jest.
             </p>
           </div>
         </div>
