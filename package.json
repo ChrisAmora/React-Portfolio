@@ -1,4 +1,13 @@
 {
+  "browserslist": [
+    "defaults",
+    "last 5 iOS versions",
+    "IE 10",
+    "IE 11",
+    "ios_saf 8.4",
+    "iOS 6",
+    "iOS 5"
+  ],
   "name": "react-portfolio",
   "version": "1.0.0",
   "description": "just my portfolio site",
