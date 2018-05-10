@@ -1,12 +1,12 @@
 .button {
-  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  box-shadow: 0 0 0 2 #9fb4f2;
   background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
   border-radius: 1rem;
   border: 1px solid #4e6096;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Arial;
+  font-family: $font-primary;
   font-size: 1.5rem;
   margin: 1rem 1rem 0 0;
   padding: 0.5rem $default-space;
@@ -18,45 +18,54 @@
     background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
     background-color: #476e9e;
   }
+
   &:active {
     position: relative;
     top: 1px;
   }
+
   &--1 {
     background: linear-gradient(to bottom, #8f5a45 5%, #ff3604 100%);
     background-color: #e96011;
     border-color: rgba(116, 33, 33, 0.877);
-    box-shadow: 0px 0px 0px 2px rgb(51, 5, 5);
+    box-shadow: 0 0 0 2px rgb(51, 5, 5);
+
     &:hover {
       background: linear-gradient(to bottom, #812242 5%, #1b020c 100%);
       background-color: #1a030d;
     }
   }
+
   &--2 {
     background: linear-gradient(to bottom, #14a1a1 5%, #052346 100%);
     background-color: #074150;
     border-color: rgba(16, 14, 83, 0.877);
-    box-shadow: 0px 0px 0px 2px rgb(29, 4, 75);
+    box-shadow: 0 0 0 2px rgb(29, 4, 75);
+
     &:hover {
       background: linear-gradient(to bottom, #034e80 5%, #2240e9 100%);
       background-color: #0f2c63;
     }
   }
+
   &--3 {
     background: linear-gradient(to bottom, #179665 5%, #03422a 100%);
     background-color: #066338;
     border-color: rgba(7, 72, 75, 0.877);
-    box-shadow: 0px 0px 0px 2px rgb(2, 13, 49);
+    box-shadow: 0 0 0 2px rgb(2, 13, 49);
+
     &:hover {
       background: linear-gradient(to bottom, #054b30 5%, #034725 100%);
       background-color: #032431;
     }
   }
+
   &--4 {
     background: linear-gradient(to bottom, #ec1616 5%, #fc0101 100%);
     background-color: #e91616ef;
     border-color: rgba(146, 9, 9, 0.877);
-    box-shadow: 0px 0px 0px 2px rgb(155, 8, 8);
+    box-shadow: 0 0 0 2px rgb(155, 8, 8);
+
     &:hover {
       background: linear-gradient(to bottom, #a10505 5%, #970303 100%);
       background-color: #a50404;

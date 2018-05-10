@@ -9,13 +9,16 @@
     transition: 1s all;
     width: 20rem;
     z-index: 10;
+
     &:hover {
       transform: scale(1.2);
     }
+
     &:active {
       animation: spin 7s infinite;
     }
   }
+
   &__info {
     &__container {
       display: inline-block;
@@ -23,9 +26,11 @@
       margin: 3rem 2rem 2rem 0;
       position: relative;
       z-index: 999;
+
       &:hover {
         fill: rgb(12, 11, 11);
       }
+
       &__svg {
         height: 5rem;
         pointer-events: none;
@@ -54,11 +59,12 @@
   &__skills {
     max-width: 50rem;
   }
-  
+
   &__svg {
     height: 30rem;
     width: 30rem;
     z-index: 10;
+
     &:hover {
       animation: spin 7s infinite;
     }

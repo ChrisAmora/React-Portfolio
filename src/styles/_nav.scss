@@ -42,6 +42,7 @@
 
   &__nav__list {
     @include center;
+
     list-style: none;
     text-align: center;
     width: 100%;
@@ -53,14 +54,16 @@
 
   &__nav__list__item__link {
     display: none !important;
+
     &:link,
     &:visited {
-      background-image: linear-gradient(
-        120deg,
-        transparent 0%,
-        transparent 50%,
-        white 50%
-      );
+      background-image:
+        linear-gradient(
+          120deg,
+          transparent 0%,
+          transparent 50%,
+          white 50%
+        );
       background-size: 220%;
       color: white;
       display: inline-block;
@@ -92,10 +95,10 @@
     display: inline-block !important;
   }
 
-  //Icon
   &__icon {
     margin-top: 3.5rem;
     position: relative;
+
     &,
     &::before,
     &::after {
@@ -104,6 +107,7 @@
       height: 2px;
       width: 3rem;
     }
+
     &::before,
     &::after {
       content: "";
@@ -111,9 +115,11 @@
       position: absolute;
       transition: all 0.2s;
     }
+
     &::before {
       top: -0.8rem;
     }
+
     &::after {
       top: 0.8rem;
     }
@@ -122,6 +128,7 @@
   &__button:hover &__icon::before {
     top: -1rem;
   }
+
   &__button:hover &__icon::after {
     top: 1rem;
   }
@@ -129,10 +136,12 @@
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;
   }
+
   &__checkbox:checked + &__button &__icon::before {
     top: 0;
     transform: rotate(135deg);
   }
+
   &__checkbox:checked + &__button &__icon::after {
     top: 0;
     transform: rotate(-135deg);

@@ -16,6 +16,7 @@ h2 {
   @media only screen and (max-width: $bp-small) {
     font-size: 4rem;
   }
+
   @media only screen and (max-width: $bp-smallest) {
     font-size: 3.5rem;
   }
@@ -50,11 +51,12 @@ h5 {
 }
 
 .comment {
-  background-image: linear-gradient(
-    to right,
-    rgb(41, 187, 231),
-    rgb(51, 54, 228)
-  );
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(41, 187, 231),
+      rgb(51, 54, 228)
+    );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
