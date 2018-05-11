@@ -5,10 +5,12 @@ module.exports = {
     "jsx-a11y",
     "import"
   ],
+  "parser": "babel-eslint",
   "env": {
     "browser": true
   },
   "rules": {
+    "strict": 0,
     "linebreak-style": ["error","windows"],
     "max-len": "off",
     "react/jsx-filename-extension": 0,

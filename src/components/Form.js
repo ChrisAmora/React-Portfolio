@@ -8,21 +8,21 @@ export default class Form extends React.Component {
     email: '',
   };
   submitButton = React.createRef();
-  onFormSubmit = e => {
+  onFormSubmit = (e) => {
     e.preventDefault();
     return axios
-      .post(`/email`, {
+      .post('/email', {
         name: this.state.name,
         emailer: this.state.email,
         text: this.state.text,
       })
-      .then(response => {
+      .then(() => {
         this.submitButton.current.disabled = true;
         this.submitButton.current.textContent = 'Obrigado!';
         this.setState({ name: '', text: '', email: '' });
       });
   };
-  onInputChange = e => {
+  onInputChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
   render() {
