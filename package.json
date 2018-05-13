@@ -30,7 +30,7 @@
     "server": "node server/server.js",
     "servern": "nodemon server/server.js",
     "copy-config": "cp ../config.js ./",
-    "deploy": "npm run copy-config && npm i node-sass && npm i && npm run build"
+    "deploy": "npm run copy-config && npm i node-sass && npm i && npm run build && forever stopall && forever start server/server.js"
   },
   "author": "Chris Amora",
   "license": "MIT",
