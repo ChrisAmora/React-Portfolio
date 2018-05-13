@@ -10,18 +10,12 @@
   ],
   "stylelint": {
     "extends": "stylelint-config-standard",
-    "plugins": [
-      "stylelint-scss"
-    ],
+    "plugins": ["stylelint-scss"],
     "rules": {
       "at-rule-no-unknown": [
         true,
         {
-          "ignoreAtRules": [
-            "extends",
-            "mixin",
-            "include"
-          ]
+          "ignoreAtRules": ["extends", "mixin", "include"]
         }
       ]
     }
@@ -34,7 +28,9 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
     "server": "node server/server.js",
-    "servern": "nodemon server/server.js"
+    "servern": "nodemon server/server.js",
+    "copy-config": "cp ../config.js ./",
+    "deploy": "npm run copy-config && npm i node-sass && npm i && npm run build"
   },
   "author": "Chris Amora",
   "license": "MIT",
@@ -61,6 +57,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "compression-webpack-plugin": "^1.1.11",
+    "copyfiles": "^2.0.0",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
