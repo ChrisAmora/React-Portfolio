@@ -19,7 +19,7 @@ export default () => (
       <div className="card__site">
         <Bullbasaur className="card__site__svg" />
         <div className="card__site__container">
-          <img className="card__site__container__img" src={img1} />
+          <img className="card__site__container__img" alt="card__site__container__img-1" src={img1} />
           <div className="card__site__container__text">
             <a href="https://react-pollarizer.herokuapp.com/" target="_blank">
               <h2 className="card__site__container__text--title comment">
@@ -41,7 +41,7 @@ export default () => (
       <div className="card__site">
         <Charmander className="card__site__svg" />
         <div className="card__site__container">
-          <img className="card__site__container__img" src={img2} />
+          <img className="card__site__container__img" alt="card__site__container__img-2" src={img2} />
           <div className="card__site__container__text">
             <a href="http://arcane-depths-98903.herokuapp.com/" target="_blank">
               <h2 className="card__site__container__text--title comment">
@@ -60,7 +60,7 @@ export default () => (
       <div className="card__site">
         <Squirtle className="card__site__svg" />
         <div className="card__site__container">
-          <img className="card__site__container__img" src={img3} />
+          <img className="card__site__container__img" alt="card__site__container__img-3" src={img3} />
           <div className="card__site__container__text">
             <a href="https://react-expenses92.herokuapp.com/" target="_blank">
               <h2 className="card__site__container__text--title comment">
